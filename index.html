@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="/loveljj/js/jquery.js" tppabs="/loveljj/js/jquery.js"></script>
 	<script type="text/javascript" src="/loveljj/js/garden.js" tppabs="/loveljj/js/garden.js"></script>
     	<script type="text/javascript" src="/loveljj/js/functions.js" tppabs="/loveljj/js/functions.js"></script>
+	<script type="text/javascript" src="/loveljj/js/jq.snow.js" tppabs="/loveljj/js/jq.snow.js"></script>
 <body>
 	<div id="mainDiv">
 		<div id="content">
@@ -59,6 +60,13 @@
 	</div>
 </div>
 	<script type="text/javascript">
+		$(function(){
+			$.fn.snow({ 
+				minSize: 5,		//雪花的最小尺寸
+				maxSize: 50, 	//雪花的最大尺寸
+				newOn: 150		//雪花出现的频率 这个数值越小雪花越多
+			});
+		});
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date("2021-01-10 21:09:09");
